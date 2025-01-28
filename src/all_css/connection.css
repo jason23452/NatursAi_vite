@@ -1,0 +1,284 @@
+
+.connection_container{
+
+    @apply absolute w-full h-2525px   md:h-2652px top-0  ;
+
+}
+
+.desktop_connection_container{
+
+
+    @apply w-full md:h-2180px hidden   bg-[url('../assets/connection_img/connection_bg.webp')] bg-cover  md:flex flex-col items-center;
+}
+
+
+
+
+.desktop_connection_logo{
+
+    @apply mt-206px w-467px h-127px bg-[url('../assets/connection_img/connection_logo.webp')] bg-cover
+}
+
+.desktop_connection_logo_text_container{
+    @apply mt-108px mb-23px w-978px h-152px flex  items-center 
+}
+
+
+.desktop_connection_text{
+
+    @apply text-24px   text-3F3F46 font-sans font-bold leading-36px 
+}
+
+.desktop_connection_lable_text{
+
+    @apply text-36px  text-3F3F46 font-sans font-bold leading-36px 
+
+}
+
+
+.desktop_form_container{
+
+    @apply w-845px h-1295px flex flex-col
+}
+
+
+
+.desktop_select_lable_container{
+
+    @apply w-720px  md:w-839px h-134.31px flex flex-col justify-between
+}
+
+.desktop_select_container{
+
+    @apply w-full h-77.087px    md:w-full md:h-77.09px relative 
+}
+
+.desktop_option_text{
+
+    @apply  text-538AA2 font-sans text-32px font-normal leading-48px tracking-3.2px
+}
+
+
+
+.desktop_select {
+    @apply relative w-720px h-full rounded-10px   md:w-845px md:h-full md:rounded-10px bg-white flex items-center border-none focus:outline z-10 p-0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+.desktop_select_text{
+
+    @apply w-720px  md:w-782.12px h-47.68px  px-15.89px  md:px-18.52px desktop_option_text flex items-center justify-between 
+
+}
+
+.desktop_select_option_container{
+ @apply  relative  z-20  top-4px w-720px  md:w-839px h-auto  
+}
+
+.desktop_select_option {
+    @apply w-full h-77.087px  md:h-77.03px my-auto rounded-10px bg-white flex flex-col justify-center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 0.3s ease, color 0.3s ease; /* 添加过渡效果 */
+}
+
+.desktop_select_option:hover {
+    @apply bg-CACACA; /* 悬停时容器背景颜色变化 */
+}
+
+.desktop_select_option span {
+    @apply px-15.89px  md:px-18.52px desktop_option_text;
+    transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+.desktop_select_option:hover span {
+    @apply text-white; /* 父容器悬停时子元素文字颜色变白 */
+}
+
+
+
+
+.desktop_select_arrow{
+
+    @apply absolute md:right-23.7px right-32.92px   w-41px    h-25px  bg-[url('../assets/connection_img/connection_arrow.webp')] bg-cover  transition-transform duration-300 
+}
+
+
+.turn_180{
+
+    transform:rotate(180deg);
+}
+
+
+.turn_0{
+
+    transform:rotate(0deg);
+}
+
+
+
+.mt_style_2{
+    @apply mt-59.69px md:mt-98.69px
+}
+
+.desktop_input_lable{
+
+    @apply mt-93.69px  w-full h-60px  flex  space-x-66px 
+}
+
+.desktop_input_lable div{
+
+    @apply w-384px h-full flex items-center
+}
+
+.desktop_input_lable_start{
+
+    @apply text-AE2D2D font-sans font-bold leading-36px text-48px
+}
+
+
+
+.desktop_input{
+
+    @apply  mt-12px  w-full h-97px  flex  space-x-55px    ;
+
+}
+
+
+.desktop_input input {
+    @apply w-395px h-full bg-white rounded-10px border-none relative text-32px pl-19px  box-border   ;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+.desktop_input_lable_2{
+
+    @apply mt-71px w-384px h-60px flex items-center
+
+}
+
+.desktop_textarea{
+
+    @apply mt-12px w-full h-371px border-none rounded-10px box-border pl-19px pt-19px text-32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder{
+
+    @apply font-sans leading-48px tracking-3.2px
+}
+
+.desktop_connection_submit_button{
+
+    @apply  ml-auto mt-86px w-224px h-56px p-0 border-0 bg-button_color_green hover:bg-button_color_hover
+}
+
+.desktop_connection_submit_button span{
+
+    @apply text-white font-sans text-24px font-medium leading-28.953px
+
+}
+
+.media_connection_container{
+
+    @apply w-full h-2113px  flex flex-col bg-[url('../assets/connection_img/media_connection_bg.webp')] bg-cover items-center   md:hidden
+}
+
+.media_connection_Naturs_logo{
+
+    @apply mt-244px w-390px h-127px bg-[url('../assets/connection_img/media_connection_Naturs_logo.webp')] bg-cover
+}
+
+.media_logo_text{
+
+    @apply mt-44px mb-75px w-562px h-83px text-3F3F46 font-sans text-20px font-bold leading-30px
+}
+
+.media_form_container{
+
+    @apply  w-720px  h-1479px flex flex-col items-center
+
+}
+
+
+.media_input_all_container{
+
+    @apply   w-720px h-134px flex flex-col justify-between
+}
+
+.media_Lable_container{
+
+    @apply w-305.17px h-47.68px flex items-center
+}
+
+.media_Lable_container span{
+
+    @apply font-sans text-36px font-bold leading-54px
+}
+
+.media_Lable_text{
+
+    @apply  text-3F3F46
+}
+
+.media_Lable_start{
+
+    @apply text-AE2D2D
+}
+
+
+
+
+
+.media_input_container{
+
+    @apply w-full h-77px bg-white rounded-10px border-none focus:outline-black text-32px pl-15.89px box-border;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.mt_style_3{
+
+    @apply mt-78.69px
+}
+
+.mt_style_4{
+    @apply mt-97px
+}
+
+.media_textarea_container{
+
+
+    @apply mt-97px w-full h-465px flex flex-col justify-between 
+}
+
+
+.media_textarea_Lable_container{
+
+    @apply w-305.17px h-47.68px flex items-center
+}
+
+.media_textarea_Lable_container span{
+
+    @apply font-sans text-36px font-bold leading-54px
+}
+
+.media_textarea_container textarea{
+
+    @apply w-full h-408px rounded-10px bg-white text-32px box-border border-none pl-15.89px pt-14.52px  focus:outline-black focus:outline-2 ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.media_connection_submit_button{
+
+    @apply  mt-82px  w-243.96px h-63px border-none bg-button_color_green flex justify-center items-center rounded-30.83px
+}
+
+.media_connection_submit_button span{
+
+    @apply text-white font-sans text-32px font-medium leading-38.603px
+}

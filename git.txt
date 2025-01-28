@@ -1,0 +1,18 @@
+echo "# NatursAi_vite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jason23452/NatursAi_vite.git
+git push -u origin main
+
+
+#維護版本
+
+
+git add .
+
+
+git commit -m "0.0.1"  git reset --soft HEAD~1
+
+git push origin main

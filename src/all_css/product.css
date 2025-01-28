@@ -1,0 +1,586 @@
+
+
+.product_container{
+
+    @apply absolute top-0  w-full md:h-4792px h-4933px  ;
+
+}
+
+
+.desktop_product_container{
+
+    @apply  w-full h-4320px  bg-[url('../assets/product_img/product_bg.webp')] bg-cover hidden  md:flex md:flex-col;
+
+}
+
+.desktop_title_container{
+
+
+    @apply ml-203px mt-224px w-1322px h-448px flex 
+
+
+}
+
+.desktop_title_img{
+
+    @apply w-248px h-122px bg-[url('../assets/product_img/Goeat_title.webp')] bg-cover
+
+}
+
+.desktop_title_text{
+
+    @apply mt-10px w-636px h-160px  flex flex-col justify-center  text-3F3F46 font-sans text-20px font-normal leading-24.127px tracking-3px
+}
+
+
+.desktop_title_button{
+
+    @apply w-224px h-56px bg-button_color_Light_green border-none rounded-28px flex justify-center items-center
+
+}
+
+.desktop_title_button span{
+
+    @apply text-white text-center font-sans text-24px font-medium leading-28.953px
+
+}
+
+.desktop_title_product_img{
+
+    @apply ml-186px mt-23px  w-206px h-421px   bg-[url('../assets/product_img/title_product_img.webp')] bg-cover
+}
+
+.desktop_tilte_animale{
+
+    @apply ml-46px mt-202px w-179px h-179px bg-cover;
+    animation: slideShow 3s infinite; /* 每張圖片3秒，總共9秒 */
+    
+} 
+
+@keyframes slideShow {
+    0%, 33.33% {
+      background-image: url('../assets/product_img/animale1.webp'); /* 第一張圖片 */
+    }
+    33.34%, 66.66% {
+      background-image: url('../assets/product_img/animale2.webp'); /* 第二張圖片 */
+    }
+    66.67%, 100% {
+      background-image: url('../assets/product_img/animale3.webp'); /* 第三張圖片 */
+    }
+  }
+
+
+.desktop_product_title2_text_container{
+
+    @apply ml-271px mt-591px w-1363px h-113px  flex justify-end
+}
+
+.desktop_product_title2_text_container span{
+
+    @apply font-sans text-64px font-bold leading-115.2px tracking-19.2px
+}
+
+.desktop_product_title2_text1{
+
+    @apply text-538AA2
+}
+
+
+.desktop_product_title2_text2{
+
+    @apply text-83BBAE
+}
+
+
+.desktop_title_container2{
+
+    @apply ml-208px mt-8px  w-1551px h-582.15px flex items-center  relative
+}
+
+.desktop_product_vidoe_container {
+    @apply w-958px h-auto rounded-35px relative overflow-hidden;
+    background: radial-gradient(151.91% 61.46% at 49.97% 38.54%, rgba(212, 225, 231, 0.00) 74.5%, #000 95%);
+    aspect-ratio: 16/9; /* 確保容器維持16:9比例 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop_product_vidoe {
+    @apply absolute top-0 left-0 bg-transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保內容完全覆蓋並保持比例 */
+}
+
+.desktop_title_container2_object_container{
+
+    @apply ml-32.58px w-549px h-518px flex flex-col justify-between items-end
+}
+
+.desktop_product_object1{
+
+    @apply w-full h-311px bg-[url('../assets/product_img/product_object1.webp')] bg-cover
+}
+
+
+.desktop_product_object2{
+
+    @apply w-612px h-183px  rounded-27px flex justify-center items-center space-x-26.19px ;
+    background: var(--ffffff-2-paints, linear-gradient(93deg, rgba(57, 153, 131, 0.50) -0.12%, rgba(83, 138, 162, 0.50) 99.93%), #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.desktop_product_object2 div{
+
+    @apply flex flex-col items-center text-white font-sans font-bold leading-72px
+}
+
+.desktop_product_object2 button{
+
+    @apply border-none bg-transparent relative z-10
+}
+
+.desktop_product_object2_img_left{
+
+    @apply w-73.81px h-73.81px bg-[url('../assets/product_img/product_object_2_arrow_left.webp')] bg-cover
+}
+
+.desktop_product_object2_img_right{
+
+    @apply w-73.81px h-73.81px bg-[url('../assets/product_img/product_object_2_arrow_right.webp')] bg-cover
+    
+
+}
+
+
+.desktop_product_object2_text1{
+
+    @apply text-64px
+}
+.desktop_product_object2_text2{
+
+    @apply text-40px
+}
+
+
+.desktop_product_title3_text_container{
+
+    @apply ml-415px mt-330.85px  w-1091px h-113px flex justify-center items-center
+
+}
+
+.desktop_product_title3_text_container span {
+
+    @apply font-sans text-64px font-bold leading-77.207px tracking-12.8px
+
+}
+
+.desktop_product_title3_text1{
+
+    @apply text-538AA2
+}
+
+.desktop_product_title3_text2{
+
+    @apply text-3F3F46
+}
+
+.desktop_title_container3{
+
+
+    @apply  ml-251px mt-35px w-1457px h-738px flex justify-between 
+}
+
+.desktop_title_container3_object1{
+
+    @apply w-642.357px h-738px  bg-[url('../assets/product_img/title_container3_object1.webp')] bg-cover
+}
+
+.desktop_title_container3_object1:hover{
+
+    @apply bg-[url('../assets/product_img/title_container3_object1_hover.webp')] bg-contain bg-no-repeat
+}
+
+.desktop_title_container3_object_container1{
+
+    @apply w-756px h-738px flex flex-col justify-between
+}
+
+.desktop_title_container3_object_container2{
+
+    @apply w-full h-347px flex  justify-between
+}
+
+.desktop_title_container3_object2{
+
+    @apply w-351px h-347px   bg-[url('../assets/product_img/title_container3_object2.webp')] bg-cover
+}
+
+.desktop_title_container3_object2:hover{
+
+    @apply  bg-[url('../assets/product_img/title_container3_object2_hover.webp')] bg-cover
+}
+
+
+.desktop_title_container3_object3{
+
+    @apply w-347px h-347px   bg-[url('../assets/product_img/title_container3_object3.webp')] bg-cover
+}
+
+.desktop_title_container3_object3:hover{
+
+    @apply  bg-[url('../assets/product_img/title_container3_object3_hover.webp')] bg-cover
+}
+
+
+
+.desktop_title_container3_object4{
+
+    @apply w-756px h-347px   bg-[url('../assets/product_img/title_container3_object4.webp')] bg-cover
+}
+
+.desktop_title_container3_object4:hover{
+
+    @apply  bg-[url('../assets/product_img/title_container3_object4_hover.webp')] bg-cover
+}
+
+
+.desktop_title_container4{
+
+    @apply ml-389px mt-135px w-1260px h-960px flex justify-between
+
+}
+
+.desktop_title_container4_object1{
+
+    @apply w-450px h-920px bg-[url('../assets/product_img/title_product_img.webp')] bg-cover 
+
+}
+
+.desktop_title_container4_text_ALL_container{
+
+    @apply ml-120px mt-84px   w-690px h-765px  
+}
+
+.desktop_title_container4_text_ALL_container span{
+
+    @apply font-sans
+}
+
+.text1_container{
+
+    @apply ml-60px w-531px h-159px flex justify-center items-center
+}
+.text1_container span{
+
+    @apply text-5A4B4B text-48px font-black leading-57.905px
+
+}
+
+.text2_container{
+
+    @apply relative -top-47px w-690px h-422px text-center flex items-center  
+}
+
+.text2_container span{
+
+    @apply text-5A4B4B  text-32px font-medium leading-48px tracking-5.12px
+
+}
+.title_container4_button{
+
+    @apply relative -top-47px  ml-46px w-570px h-73px bg-button_color_green border-none rounded-14px
+}
+.title_container4_button span{
+
+    @apply  text-white text-48px font-medium leading-57.905px
+
+}
+
+.title_container4_button:hover{
+
+    @apply bg-button_color_hover
+}
+.desktop_product_download_object_container{
+
+    @apply ml-48px mt-29px w-566px h-82px flex justify-between items-center
+}
+
+.desktop_product_download_object_container div{
+    @apply w-259px h-full
+}
+
+.product_googlePlay_download_object{
+
+    @apply bg-[url('../assets/product_img/download_google_play.webp')] bg-cover 
+}
+
+.product_AppleStore_download_object{
+
+    @apply bg-[url('../assets/product_img/download_Apple_store.webp')] bg-cover 
+
+}
+
+
+.media_product_container{
+
+    @apply w-full h-4521px  bg-[url('../assets/product_img/media_product_bg.webp')] bg-cover  flex flex-col items-center md:hidden
+}
+
+.media_title_product_img{
+
+    @apply mt-198px w-352px h-721px  bg-[url('../assets/product_img/media_title_product_img.webp')] bg-cover
+}
+
+
+.media_product_object1{
+
+    @apply mt-792px w-398.38px h-92.64px bg-button_color_Light_green rounded-27px flex items-center justify-center space-x-22.19px ;
+    background: var(--ffffff-2-paints, linear-gradient(93deg, rgba(57, 153, 131, 0.50) -0.12%, rgba(83, 138, 162, 0.50) 99.93%), #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.media_product_object1 div{
+
+    @apply flex flex-col  items-center justify-center 
+}
+
+.media_product_object1 span{
+
+    @apply  text-white font-sans font-bold relative
+}
+
+.media_product_object1_text_1{
+    @apply top-0  text-32px leading-57.6px tracking-4.8px absolute
+}
+
+.media_product_object1_text_2{
+    @apply  bottom-13.2px  text-20px leading-36px tracking-3px absolute
+}
+
+
+.media_product_object1_img_left{
+
+    @apply w-70.08px h-69.57px bg-[url('../assets/product_img/product_object_2_arrow_left.webp')] bg-cover border-none bg-transparent 
+}
+
+
+.media_product_object1_img_right{
+
+
+    @apply w-70.08px h-69.57px bg-[url('../assets/product_img/product_object_2_arrow_right.webp')] bg-cover border-none bg-transparent
+}
+
+
+
+
+.media_product_vidoe_container{
+    
+    @apply  mt-77.36px w-724.22px h-439.9px rounded-10px  relative overflow-hidden;
+    background: radial-gradient(151.91% 61.46% at 49.97% 38.54%, rgba(212, 225, 231, 0.00) 74.5%, #000 95%);
+    aspect-ratio: 16/9; /* 確保容器維持16:9比例 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_product_vidoe {
+    @apply absolute top-0 left-0 bg-transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保內容完全覆蓋並保持比例 */
+}
+
+
+.media_product_object2{
+
+    @apply mt-141.1px w-608px h-209.66px  flex flex-col items-center relative
+}
+
+.media_product_object2_text_1{
+
+    @apply w-399px h-75px flex items-center justify-center text-538AA2 font-sans text-32px font-bold leading-38.603px tracking-6.4px
+}
+
+.media_product_object2_text_2{
+
+    @apply w-full h-94px flex items-center justify-center text-3F3F46 font-sans text-15px font-black leading-22.5px tracking-3px absolute top-64px
+}
+
+.media_product_object2_button{
+
+    @apply w-210px h-46.9px border-white border-3px bg-538AA2 rounded-50px flex items-center justify-center no-underline absolute bottom-0 active:bg-button_color_hover
+
+}
+
+.media_product_object2_button span{
+
+    @apply text-white font-sans text-20px font-black leading-24.127px tracking-4px
+}
+
+
+
+.media_product_object3{
+
+
+    @apply mt-170.34px w-675px h-182px flex flex-col items-center
+}
+
+.media_product_object3 span{
+
+    @apply font-sans 
+}
+
+
+.media_product_object3_text_1_container{
+
+    @apply w-623px h-76px flex items-center justify-center
+}
+
+.media_product_object3_text_1_container span{
+
+    @apply font-bold   tracking-7.2px text-48px leading-57.905px
+}
+
+
+.media_product_object3_text_1{
+    background: var(--Style, linear-gradient(93deg, #399983 -0.12%, #538AA2 99.93%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.media_product_object3_text_2{
+
+    @apply text-3F3F46
+}
+
+.media_product_object3_text_3{
+    @apply mt-35px w-675px h-71px text-32px  leading-38.603px tracking-4.8px flex justify-center items-center text-center;
+    background: var(--Style, linear-gradient(93deg, #399983 -0.12%, #538AA2 99.93%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+/* 整個容器 */
+.Slider-container {
+    @apply relative mt-57px w-full h-507px overflow-visible  ;
+  }
+  
+  /* 圖片外層包裹 */
+  .Slider-image-wrapper {
+    @apply w-full h-full relative overflow-visible  ;
+  }
+  
+  /* 每張「背景圖」都絕對定位以並排顯示 */
+  .Slider-slide {
+    @apply absolute top-0 w-1/2 h-full flex items-center justify-center bg-contain bg-center bg-no-repeat   ;
+    
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* 第一張在左 */
+  .left-slide {
+    @apply left-0;
+  }
+  
+  /* 第二張在右 */
+  .right-slide {
+    @apply left-1/2
+  }
+  
+  /* 文字樣式，可自行調整 */
+  
+  
+  /* 定義三張圖對應的背景，這裡是重點： */
+  .slide1 {
+    @apply bg-[url('../assets/product_img/media_title_container3_object1.webp')] ;
+  }
+  
+  .slide2 {
+    @apply bg-[url('../assets/product_img/media_title_container3_object2.webp')] ;
+  }
+  
+  .slide3 {
+    @apply bg-[url('../assets/product_img/media_title_container3_object3.webp')] ;
+  }
+
+
+
+
+  
+  /* 上一張 / 下一張 按鈕 */
+  .nav-btn {
+    @apply absolute w-23px h-45px  top-234px  border-none z-10 bg-cover bg-transparent  ;
+  }
+  
+  /* 上一張按鈕在左 */
+  .nav-btn-prev {
+    @apply nav-btn left-47px bg-[url('../assets/product_img/media_slider_left.webp')] ;
+  }
+  /* 下一張按鈕在右 */
+  .nav-btn-next {
+    @apply nav-btn right-47px bg-[url('../assets/product_img/media_slider_right.webp')] ;
+  }
+  
+
+
+  .media_product_object4{
+
+    @apply mt-237px w-509.21px h-557px flex flex-col 
+
+  }
+
+  .media_product_object4_img{
+
+    @apply ml-51.07px  w-257px h-152px bg-[url('../assets/product_img/media_product_object4_logo.webp')] bg-cover 
+  }
+
+    .media_product_object4_button{
+        
+    @apply mt-131.86px  w-full h-127.3px  no-underline  rounded-28px bg-button_color_Light_green flex items-center justify-center
+
+    }
+    .media_product_object4_button span{
+
+        @apply text-white font-sans text-48px font-medium leading-57.905px
+    }   
+
+    .media_product_object4_button:active{
+
+        @apply bg-button_color_hover
+    }
+    
+    .media_product_object4_download_container{
+
+        @apply mt-76.43px  w-506px h-69px flex justify-between items-center
+    }
+
+    .media_product_object4_download_container div{
+
+        @apply w-222px h-full bg-cover 
+    }
+
+    
+    .media_product_object4_download_Google_Play{
+
+        @apply bg-[url('../assets/product_img/media_product_object4_download_Google_Play.webp')]
+    }
+
+    .media_product_object4_download_Apple_Store{
+
+        @apply bg-[url('../assets/product_img/media_product_object4_download_Apple_Store.webp')]
+    }
+

@@ -1,0 +1,186 @@
+
+
+.desktop_footer_container{
+
+ @apply absolute  w-full h-472px  bg-3F3F46 bottom-0 md:flex md:flex-col hidden
+ 
+}
+
+.footer_title_container1{
+    @apply ml-222px mt-105px w-1476px h-234px flex
+
+}
+
+
+.footer_title_container1 span {
+
+    @apply text-white font-sans text-24px  leading-36px 
+
+}
+
+.footer_column1{
+
+    @apply  w-406px h-194px  space-y-22px flex flex-col 
+}
+
+.footer_column2{
+
+    @apply ml-108px mt-29px w-150px h-148px  space-y-22px flex flex-col 
+}
+
+.footer_column3{
+
+    @apply ml-108px mt-29px w-150px h-205px  space-y-22px flex flex-col 
+}
+
+
+.footer_column4{
+
+    @apply ml-108px mt-29px w-150px h-92px  space-y-22px flex flex-col 
+}
+
+
+
+.footer_logo{
+
+    @apply w-196px h-59px  bg-[url('../assets/footer_img/natursAi_logo_black.webp')] bg-cover
+}
+
+
+.footer_text_style1{
+
+    @apply font-light 
+}
+
+
+
+
+.footer_text_style2{
+
+    @apply font-bold 
+}
+
+
+.footer_text_style3{
+
+    @apply footer_text_style1 underline
+
+}
+
+
+
+
+
+
+
+.footer_title_container2{
+
+    @apply ml-226px w-207px h-28.94px flex items-center space-x-61.4px
+
+}
+
+.footer_title_container2 a{
+
+    @apply w-28.07px h-28.07px
+
+}
+
+.footer_title_container3{
+
+    @apply mx-auto mt-16.93px  w-595px h-31px  
+
+}
+
+.footer_title_container3 span{
+
+    @apply w-595px h-31px flex justify-center text-white  font-sans text-16px font-light leading-24px tracking-2.4px
+}
+
+
+.footer_link{
+
+    @apply w-full h-full
+}
+
+.footer_Facebook{
+    @apply footer_link bg-[url('../assets/footer_img/Facebook.webp')] bg-cover
+}
+
+.footer_Instagram{
+    @apply footer_link bg-[url('../assets/footer_img/Instagram.webp')] bg-cover
+}
+
+.footer_Youtube{
+    @apply footer_link bg-[url('../assets/footer_img/Youtube.webp')] bg-cover
+}
+
+
+.media_footer_container{
+
+    @apply absolute bottom-0   w-full h-412px flex  flex-col items-center md:hidden;
+
+}
+
+.media_footer_logo{
+
+    @apply mt-112px w-213.22px h-63.57px bg-[url('../assets/footer_img/media_footer_logo.webp')] bg-cover
+}
+
+
+.media_footer_link_container{
+
+    @apply  mt-51.43px w-650px h-75px  flex items-center
+}
+
+
+.media_footer_link{
+
+    @apply w-199px h-43px flex justify-between 
+}
+
+.media_footer_link div{
+
+    @apply w-43px h-43px bg-cover
+}
+
+.media_footer_link_youtube{
+
+    @apply bg-[url('../assets/footer_img/media_footer_link_youtube.webp')]
+}
+
+.media_footer_link_instagram{
+
+    @apply bg-[url('../assets/footer_img/media_footer_link_instagram.webp')]
+}
+
+.media_footer_link_facebook{
+
+    @apply bg-[url('../assets/footer_img/media_footer_link_facebook.webp')]
+}
+
+.media_footer_text_container{
+
+    @apply w-430px h-75px flex items-center justify-center
+}
+
+
+.media_footer_text_container span{
+
+    @apply text-black font-sans text-20px leading-30px tracking-1px 
+}
+
+.media_footer_text_1{
+
+    @apply font-bold
+}
+
+.media_footer_text_2{
+
+    @apply font-light
+}
+
+
+.media_footer_text_3{
+
+    @apply mt-26px w-450px h-30px  text-black font-sans text-20px font-light leading-30px tracking-3px
+}

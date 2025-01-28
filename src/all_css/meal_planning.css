@@ -1,0 +1,61 @@
+
+.meal_planning_container{
+
+    @apply absolute top-0  w-full h-1080px
+}
+
+.desktop_meal_planning_container{
+
+
+    @apply w-full h-1080px bg-[url('../assets/meal_planning_img/meal_planning_bg.webp')] bg-cover  flex ;
+}
+
+
+.desktop_meal_planning_title_img{
+
+    @apply ml-306px mt-249px  w-298px h-637px bg-[url('../assets/meal_planning_img/title_meal_planning_img.webp')] bg-cover
+}
+
+.desktop_meal_planning_title_container{
+
+    @apply ml-185px mt-373px w-917px h-387.06px flex flex-col 
+}
+
+.desktop_meal_planning_title_text{
+
+    @apply w-909px h-154px flex flex-col justify-center
+}
+.desktop_meal_planning_title_text span{
+
+    @apply text-3F3F46 font-sans text-48px font-bold leading-72px tracking-9.6px
+}
+
+.desktop_meal_planning_title_button{
+    @apply mt-35px w-488.606px h-62.576px border-none bg-button_color_green rounded-14px flex justify-center items-center hover:bg-button_color_hover 
+}
+
+.desktop_meal_planning_title_button span{
+
+    @apply text-white font-sans text-48px font-medium leading-57.905px
+}
+
+.desktop_meal_planning_title_download_container{
+
+    @apply mt-65.48px w-498px h-70px flex items-center justify-between 
+}
+
+.desktop_meal_planning_title_download_container div{
+
+    @apply  w-222px h-full  bg-cover
+}
+
+.desktop_meal_planning_Google_Play_download{
+
+    @apply bg-[url('../assets/meal_planning_img/meal_planning_google_play_download.webp')]
+}
+
+
+.desktop_meal_planning_Apple_Store_download{
+
+    @apply bg-[url('../assets/meal_planning_img/meal_planning_Apple_Store_download.webp')]
+}
