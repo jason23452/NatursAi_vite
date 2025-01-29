@@ -1,18 +1,20 @@
-# 使用 node:20-alpine 作为基础镜像
-FROM node:20-alpine
+# 選擇 Node.js 基礎鏡像
+FROM node:18-alpine
 
-# 设置工作目录
+# 設定工作目錄
 WORKDIR /app
 
-# 复制 package.json 和 package-lock.json 并安装依赖
-COPY package*.json ./
-RUN npm install --omit=dev && npm install -g typescript \
-    && npm i --save-dev @types/react @types/react-dom
+# 複製 package.json 和 package-lock.json
+COPY package.json package-lock.json ./
 
-# 复制所有文件
+# 安裝依賴
+RUN npm install
+
+# 複製專案文件
 COPY . .
 
-# 运行 TypeScript 编译和 Vite 构建
-RUN tsc -b && vite build
+# 進行 TypeScript 編譯 & Vite 打包
+RUN npm run build
 
+# 設定預設指令
 CMD ["npm", "run", "preview"]
