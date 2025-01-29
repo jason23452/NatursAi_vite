@@ -17,4 +17,4 @@ COPY . .
 RUN npm run build
 
 # 設定預設指令
-CMD ["npm", "run", "preview"]
+CMD ["npm", "run", "preview", "dev", "--", "--host", "0.0.0.0"]
