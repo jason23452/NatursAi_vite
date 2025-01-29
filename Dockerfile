@@ -1,30 +1,23 @@
-# ----------- Stage 1: Build -----------
-    FROM node:16-alpine AS build
+# 使用 Node.js 官方 LTS 版本作為基礎鏡像
+FROM node:20-alpine
 
-    # 設置工作目錄
-    WORKDIR /app
-    
-    # 將 package*.json 複製到容器內
-    COPY package*.json ./
-    
-    # 安裝依賴
-    RUN npm install
-    
-    # 將專案其餘檔案複製到容器
-    COPY . .
-    
-    # 執行 Vite 打包
-    RUN npm run build
-    
-    # ----------- Stage 2: Production -----------
-    FROM nginx:stable-alpine
-    
-    # 將建置後的檔案從第一階段複製到 Nginx 預設靜態檔案目錄
-    COPY --from=build /app/dist /usr/share/nginx/html
-    
-    # 對外開放埠 80
-    EXPOSE 80
-    
-    # 啟動 Nginx
-    CMD ["nginx", "-g", "daemon off;"]
-    
+# 設置工作目錄
+WORKDIR /app
+
+# 複製 package.json 和 package-lock.json 進入容器
+COPY package*.json ./
+
+# 安裝依賴
+RUN npm install --omit=dev
+
+# 複製專案的所有文件到容器內
+COPY . .
+
+# 生成靜態檔案（如果你的 Vite 是用來做前端，請執行 build）
+RUN npm run build
+
+# 設定容器啟動時執行的命令
+CMD ["npm", "run", "preview"]
+
+# 設定預設的埠號（根據 Vite 預設 5173，可改成你使用的埠號）
+EXPOSE 5173
