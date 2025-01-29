@@ -1,14 +1,14 @@
 # 使用 Node.js 官方 LTS 版本作為基礎鏡像
 FROM node:20-alpine
 
-# 設置工作目錄
+# 設定工作目錄
 WORKDIR /app
 
 # 複製 package.json 和 package-lock.json 進入容器
 COPY package*.json ./
 
-# 安裝依賴
-RUN npm install --omit=dev
+# 安裝依賴，確保 TypeScript 和 Vite 插件可用
+RUN npm install --omit=dev && npm install -g typescript
 
 # 複製專案的所有文件到容器內
 COPY . .
