@@ -96,7 +96,7 @@ const product: React.FC = () => {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const response = await fetch("http://flask-backend:5000/api/videos");
+                const response = await fetch("http://172.17.0.4:5000/api/videos");
                 const data = await response.json();
                 if (data.success) {
                     setVideos(data.videos);
