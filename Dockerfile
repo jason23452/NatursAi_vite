@@ -1,20 +1,26 @@
-# 選擇 Node.js 基礎鏡像
-FROM node:18-alpine
+# 使用官方 Node.js 來建置 Vite
+FROM node:18-alpine AS build
 
 # 設定工作目錄
 WORKDIR /app
 
-# 複製 package.json 和 package-lock.json
+# 複製 package.json 並安裝依賴
 COPY package.json package-lock.json ./
-
-# 安裝依賴
 RUN npm install
 
-# 複製專案文件
+# 複製專案檔案
 COPY . .
 
-# 進行 TypeScript 編譯 & Vite 打包
+# 建立 Vite 應用程式
 RUN npm run build
 
-# 設定預設指令
-CMD ["npm", "run", "preview"]
+# 使用 Nginx 作為前端伺服器
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# 複製我們的 Nginx 配置
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# 暴露 3000 端口
+EXPOSE 3000
+CMD ["nginx", "-g", "daemon off;"]
