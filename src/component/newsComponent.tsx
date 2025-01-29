@@ -17,7 +17,7 @@ const newsComponent: React.FC = () => {
 
   useEffect(() => {
     // 使用 fetch 從 Flask API 獲取資料
-    fetch("http://127.0.0.1:5000/api/news")
+    fetch("http://localhost:5000/api/news")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
