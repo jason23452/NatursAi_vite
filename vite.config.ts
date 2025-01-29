@@ -7,9 +7,7 @@ export default defineConfig({
   },
   plugins: [react()],
   server: {
-    watch: {
-      // 確保 Vite 不會忽略 Tailwind 和自訂插件相關文件
-      ignored: ['!**/tailwind.config.js', '!**/customPlugin.js', '!**/desktopStyle.js','!**/mediaStyle.js'],
-    },
-  },
+    host: true, // 允許外部訪問
+    port: 5173,
+  }
 });
