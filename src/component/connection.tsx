@@ -130,7 +130,7 @@ const Connection: React.FC = () => {
         };
 
         try {
-            const response = await fetch("/send-email", {
+            const response = await fetch("/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
