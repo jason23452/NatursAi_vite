@@ -15,12 +15,18 @@ function meal_planning() {
                         <div className="desktop_meal_planning_Apple_Store_download"></div>
                     </div>
                 </div>
-                
-
-
-
+            </div>
+            <div className="media_meal_planning_container">
+                <div className="media_meal_planning_product_img"></div>
+                <div className="media_meal_planning_button"><span>盡情期待</span></div>
+                <div className="media_meal_planning_title_download_container">
+                    <div className="media_meal_planning_Google_Play_download"></div>
+                    <div className="media_meal_planning_Apple_Store_download"></div>
+                </div>
 
             </div>
+
+
 
         </div>
     );
